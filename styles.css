@@ -47,10 +47,6 @@ body {
     z-index: 0;
 }
 
-.enter-button:hover {
-    background-color: #A89A6D;
-} */
-
 .side-buttons {
     position: fixed;
     top: 50%;

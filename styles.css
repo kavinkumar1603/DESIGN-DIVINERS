@@ -18,7 +18,7 @@ body {
     transform: translateY(-50%);
     z-index: 1;
     font-family: 'Eras Demi ITC', sans-serif;
-    left: 60px; 
+    left: 80px; 
 }
 .content h1 {
     font-size: 4rem;

@@ -18,9 +18,8 @@ body {
     transform: translateY(-50%);
     z-index: 1;
     font-family: 'Eras Demi ITC', sans-serif;
-    left: 30px; /* Move content a little bit to the left */
+    left: 60px; 
 }
-
 .content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -99,7 +98,8 @@ body {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem; 
+    justify-content: center; 
     z-index: 3;
     margin-top: 100vh; 
 }
@@ -110,7 +110,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-     width: 100%; 
+    width: 100%; 
     max-width: 300px; 
 }
 

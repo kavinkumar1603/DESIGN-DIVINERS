@@ -14,12 +14,11 @@ body {
 .content {
     position: absolute;
     top: 50%;
-    left: 50px; /* Align content to the left side */
+    left: 10px; /* Align content to the left side */
     transform: translateY(-50%);
     text-align: left;
     z-index: 1;
     font-family: 'Eras Demi ITC', sans-serif;
-    padding-left: 10px; 
 }
 
 .content h1 {
@@ -27,7 +26,6 @@ body {
     margin-bottom: 1rem;
     color: white;
     font-family: 'Cursive', cursive;
-    padding-left: 20px; /* Move h1 text a little bit to the right */
 }
 
 .content p {
@@ -35,7 +33,6 @@ body {
     margin-bottom: 2rem;
     color: white;
     font-family: 'Cursive', cursive;
-    padding-left: 20px; /* Move p text a little bit to the right */
 }
 
 .background-image {

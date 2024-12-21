@@ -18,8 +18,9 @@ body {
     transform: translateY(-50%);
     z-index: 1;
     font-family: 'Eras Demi ITC', sans-serif;
-    left: 80px; 
+    left: 80px; /* Move content a little bit to the right */
 }
+
 .content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -98,8 +99,8 @@ body {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; 
-    justify-content: center; 
+    gap: 2rem; /* Increase gap between cards */
+    justify-content: center; /* Center align the cards */
     z-index: 3;
     margin-top: 100vh; 
 }

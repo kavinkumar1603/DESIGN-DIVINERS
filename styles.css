@@ -14,7 +14,7 @@ body {
 .content {
     position: absolute;
     top: 50%;
-    left: 50px; /* Align content to the left side */
+    left: 80px; 
     transform: translateY(-50%);
     text-align: left;
     z-index: 1;
@@ -27,6 +27,7 @@ body {
     margin-bottom: 1rem;
     color: white;
     font-family: 'Cursive', cursive;
+    left: 50px;
 }
 
 .content p {
@@ -34,6 +35,7 @@ body {
     margin-bottom: 2rem;
     color: white;
     font-family: 'Cursive', cursive;
+    left: 50px;
 }
 
 .background-image {

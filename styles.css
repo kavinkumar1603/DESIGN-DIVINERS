@@ -14,9 +14,8 @@ body {
 .content {
     position: absolute;
     top: 50%;
-    left: 90px;
+    left: 50px;
     transform: translateY(-50%);
-    text-align: left;
     z-index: 1;
     font-family: 'Eras Demi ITC', sans-serif;
 }

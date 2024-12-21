@@ -99,8 +99,8 @@ body {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Increase gap between cards */
-    justify-content: center; /* Center align the cards */
+    gap: 2rem; 
+    justify-content: center; 
     z-index: 3;
     margin-top: 100vh; 
 }
@@ -126,11 +126,11 @@ body {
     height: 200px; 
     object-fit: cover; 
     border-radius: 5px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .card:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .card p {

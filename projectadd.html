@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Application Poster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <button class="enter-button" onclick="location.href='#enter'">Enter</button>
+    <div class="side-buttons">
+        <button onclick="location.href='#home'" title="Home"><i class="fas fa-home"></i></button>
+        <button onclick="showMenu()" title="Menu"><i class="fas fa-utensils"></i></button>
+        <button onclick="location.href='#about'" title="About Us"><i class="fas fa-info-circle"></i></button>
+        <button onclick="location.href='#contact'" title="Contact Us"><i class="fas fa-envelope"></i></button>
+    </div>
+    <div class="content">
+        <h1>Welcome to Foodie's Paradise</h1>
+        <p>Order your favorite meals from the comfort of your home!</p>
+    </div>
+    <div class="background-image"></div>
+    <div class="menu" id="menu">
+        <div class="card">
+            <img src="dessert1.jpg" alt="Dessert 1">
+            <p>Dessert 1</p>
+        </div>
+        <div class="card">
+            <img src="dessert2.jpg" alt="Dessert 2">
+            <p>Dessert 2</p>
+        </div>
+        <div class="card">
+            <img src="dessert3.jpg" alt="Dessert 3">
+            <p>Dessert 3</p>
+        </div>
+    </div>
+    <script>
+        function showMenu() {
+            document.getElementById('menu').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

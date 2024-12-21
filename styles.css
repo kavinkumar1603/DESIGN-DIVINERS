@@ -47,23 +47,9 @@ body {
     z-index: 0;
 }
 
-.enter-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #C2B280;
-    color: black;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 2; /* Ensure button is above the background image */
-}
-
 .enter-button:hover {
     background-color: #A89A6D;
-}
+} */
 
 .side-buttons {
     position: fixed;

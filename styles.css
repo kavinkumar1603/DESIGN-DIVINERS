@@ -49,11 +49,11 @@ body {
 
 .side-buttons {
     position: fixed;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+    top: 10px; /* Position buttons at the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the buttons horizontally */
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Arrange buttons in a row */
     gap: 1rem;
     z-index: 2; /* Ensure buttons are above the background image */
 }

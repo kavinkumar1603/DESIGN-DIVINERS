@@ -111,14 +111,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    width: 100%; 
+    width: calc(33.333% - 2rem); /* Ensure cards take up equal space with gap */
     max-width: 300px; 
     padding: 1rem; /* Add padding inside the card */
 }
 
 .card img {
     width: 100%;
-    height: auto; 
+    height: 200px; /* Fix the height of the images */
     object-fit: cover; 
     border-radius: 5px; /* Add border radius to the images */
 }

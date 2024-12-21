@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Arrange content in a column */
+    flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
@@ -14,7 +14,7 @@ body {
 .content {
     position: absolute;
     top: 50%;
-    left: 10px; /* Align content to the left side */
+    left: 25px; 
     transform: translateY(-50%);
     text-align: left;
     z-index: 1;

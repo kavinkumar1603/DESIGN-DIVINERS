@@ -4,14 +4,15 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Arrange content in a column */
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     position: relative;
 }
 
 .content {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
@@ -96,15 +97,11 @@ body {
 }
 
 .menu {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     z-index: 3;
-}
+    margin-top: 100vh; 
 
 .card {
     background-color: white;

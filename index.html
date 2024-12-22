@@ -43,6 +43,18 @@
         .menu .card:hover {
             transform: scale(1.05);
         }
+        .sign-in-button {
+            background-color: #C739FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .sign-in-button:hover {
+            background-color: #A32FCC;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +67,7 @@
     <div class="content" id="home">
         <h1>Welcome to Foodie's Paradise</h1>
         <p>Order your favorite meals from the comfort of your home!</p>
+        <button class="sign-in-button" onclick="location.href='#signin'">Sign In</button>
     </div>
     <div class="background-image" style="background-image: url('img/top-view-delicious-cakes-along-with-cinnamon-candies-dark-surface.jpg');"></div>
     <div class="menu" id="menu">

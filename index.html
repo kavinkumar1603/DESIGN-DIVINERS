@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        .side-buttons {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
         .side-buttons button {
             cursor: pointer;
             transition: transform 0.3s;
@@ -23,7 +29,7 @@
     </style>
 </head>
 <body>
-    <div class="side-buttons" style="position: fixed; top: 10px; left: 10px;">
+    <div class="side-buttons">
         <button onclick="scrollToSection('home')" title="Home"><i class="fas fa-home"></i></button>
         <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
         <button onclick="scrollToSection('about')" title="About Us"><i class="fas fa-info-circle"></i></button>

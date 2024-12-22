@@ -3,65 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Application Poster</title>
+    <title>Enga Area Ulla Varadha</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="side-buttons">
-        <button onclick="scrollToSection('home')" title="Home"><i class="fas fa-home"></i></button>
-        <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
-        <button onclick="scrollToSection('about')" title="About Us"><i class="fas fa-info-circle"></i></button>
-        <button onclick="scrollToSection('contact')" title="Contact Us"><i class="fas fa-envelope"></i></button>
+        <button onclick="location.href='#home'" title="Home"><i class="fas fa-home"></i></button>
+        <button onclick="showMenu()" title="Menu"><i class="fas fa-utensils"></i></button>
+        <button onclick="location.href='#about'" title="About Us"><i class="fas fa-info-circle"></i></button>
+        <button onclick="location.href='#contact'" title="Contact Us"><i class="fas fa-envelope"></i></button>
     </div>
-    <div class="content" id="home">
-        <h1>Welcome to Foodie's Paradise</h1>
+    <div class="content">
+        <h1>Welcome to Foodie's Paradise </h1>
         <p>Order your favorite meals from the comfort of your home!</p>
     </div>
-    <div class="background-image" style="background-image: url('img/top-view-delicious-cakes-along-with-cinnamon-candies-dark-surface.jpg');"></div>
+    <div class="background-image"></div>
     <div class="menu" id="menu">
         <div class="card">
-            <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
-            <p>Dessert Image 1</p>
+            <img src="dessert1.jpg" alt="Dessert 1">
+            <p>Dessert 1</p>
         </div>
         <div class="card">
-            <img src="img/DESSERT IMAGE 2.jpg" alt="Dessert Image 2">
-            <p>Dessert Image 2</p>
+            <img src="dessert2.jpg" alt="Dessert 2">
+            <p>Dessert 2</p>
         </div>
         <div class="card">
-            <img src="img/DESSERT IMAGE 3.avif" alt="Dessert Image 3">
-            <p>Dessert Image 3</p>
+            <img src="dessert3.jpg" alt="Dessert 3">
+            <p>Dessert 3</p>
         </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 4.avif" alt="Dessert Image 4">
-            <p>Dessert Image 4</p>
-        </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 5.jpg" alt="Dessert Image 5">
-            <p>Dessert Image 5</p>
-        </div>
-        <div class="card">
-            <img src="img/variety-mixed-types-chocolate_23-2148238709.avif" alt="Variety of Mixed Chocolates">
-            <p>Variety of Mixed Chocolates</p>
-        </div>
-        <div class="card">
-            <img src="img/dessert image 6.jpg" alt="Dessert Image 6">
-            <p>Dessert Image 6</p>
-        </div>
-        <div class="card">
-            <img src="img/dessert images5.jpg" alt="Dessert Image 7">
-            <p>Dessert Image 7</p>
-        </div>
-    </div>
-    <div id="about">
-        <!-- About Us content here -->
-    </div>
-    <div id="contact">
-        <!-- Contact Us content here -->
     </div>
     <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        function showMenu() {
+            document.getElementById('menu').style.display = 'flex';
         }
     </script>
 </body>

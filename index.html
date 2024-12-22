@@ -20,11 +20,21 @@
         .side-buttons button:hover {
             transform: scale(1.1);
         }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: black;
+            padding: 20px;
+        }
         .menu .card {
             transition: transform 0.3s;
             width: 200px;
             margin: 10px;
             text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .menu .card img {
             width: 100%;
@@ -32,11 +42,6 @@
         }
         .menu .card:hover {
             transform: scale(1.05);
-        }
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
         }
     </style>
 </head>

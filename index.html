@@ -6,9 +6,18 @@
     <title>Food Application Poster</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .side-buttons button {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .side-buttons button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <div class="side-buttons">
+    <div class="side-buttons" style="position: fixed; top: 10px; left: 10px;">
         <button onclick="scrollToSection('home')" title="Home"><i class="fas fa-home"></i></button>
         <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
         <button onclick="scrollToSection('about')" title="About Us"><i class="fas fa-info-circle"></i></button>

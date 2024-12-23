@@ -118,7 +118,7 @@ body {
 }
 
 .card:hover {
-    border: 2px solid rgb(75, 6, 127); 
+    border: 5px solid rgb(75, 6, 127); 
 }
 
 .card img {

@@ -1,4 +1,4 @@
-wbody {
+body {
     font-family: Arial, sans-serif;
     background-color: black;
     margin: 0;
@@ -61,7 +61,7 @@ wbody {
 
 .side-buttons button {
     background-color: transparent;
-    color: #C2B280;
+    color: #c2b280;
     border: none;
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -118,7 +118,7 @@ wbody {
 }
 
 .card:hover {
-    border: 2px solid blue; 
+    border: 2px solid rgb(75, 6, 127); 
 }
 
 .card img {

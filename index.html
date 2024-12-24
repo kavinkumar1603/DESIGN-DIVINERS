@@ -23,12 +23,17 @@
         }
         .menu {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column; /* Arrange portrait and landscape lines */
             justify-content: center;
             background-color: black;
             padding: 20px;
             position: relative; 
             z-index: 1; /* Ensure menu is behind the buttons */
+        }
+        .menu .line {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
         .menu .card {
             transition: transform 0.3s;
@@ -79,53 +84,61 @@
     </div>
     <div class="background-image" style="background-image: url('img/top-view-delicious-cakes-along-with-cinnamon-candies-dark-surface.jpg');"></div>
     <div class="menu" id="menu">
-        <div class="card">
-            <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
-            <p>Ice Cake Fusion</p>
+        <div class="line">
+            <div class="card">
+                <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
+                <p>Ice Cake Fusion</p>
+            </div>
+            <div class="card">
+                <img src="img/DESSERT IMAGE 2.jpg" alt="Dessert Image 2">
+                <p>Chill & Crumble</p>
+            </div>
+            <div class="card">
+                <img src="img/DESSERT IMAGE 3.avif" alt="Dessert Image 3">
+                <p>Rosy Strawberry Treat</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 2.jpg" alt="Dessert Image 2">
-            <p>Chill & Crumble</p>
+        <div class="line">
+            <div class="card">
+                <img src="img/DESSERT IMAGE 4.avif" alt="Dessert Image 4">
+                <p>Melted Dreams</p>
+            </div>
+            <div class="card">
+                <img src="img/DESSERT IMAGE 5.jpg" alt="Dessert Image 5">
+                <p>Frozen Indulgence</p>
+            </div>
+            <div class="card">
+                <img src="img/variety-mixed-types-chocolate_23-2148238709.avif" alt="Variety of Mixed Chocolates">
+                <p>Mixed Chocolates</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 3.avif" alt="Dessert Image 3">
-            <p>Rosy Strawberry Treat</p>
+        <div class="line">
+            <div class="card">
+                <img src="img/dessert image 6.jpg" alt="Dessert Image 6">
+                <p>Ruby Ripple Brownie</p>
+            </div>
+            <div class="card">
+                <img src="img/dessert images5.jpg" alt="Dessert Image 7">
+                <p>Glacier Slice</p>
+            </div>
+            <div class="card">
+                <img src="img/juice img bg 2.png" alt="Juice Image 1">
+                <p>Scarlet Sip</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 4.avif" alt="Dessert Image 4">
-            <p>Melted Dreams</p>
-        </div>
-        <div class="card">
-            <img src="img/DESSERT IMAGE 5.jpg" alt="Dessert Image 5">
-            <p>Frozen Indulgence</p>
-        </div>
-        <div class="card">
-            <img src="img/variety-mixed-types-chocolate_23-2148238709.avif" alt="Variety of Mixed Chocolates">
-            <p>Mixed Chocolates</p>
-        </div>
-        <div class="card">
-            <img src="img/dessert image 6.jpg" alt="Dessert Image 6">
-            <p>Ruby Ripple Brownie</p>
-        </div>
-        <div class="card">
-            <img src="img/dessert images5.jpg" alt="Dessert Image 7">
-            <p>Glacier Slice</p>
-        </div>
-        <div class="card">
-            <img src="img/juice img bg 2.png" alt="Juice Image 1">
-            <p>Scarlet Sip</p>
-        </div>
-        <div class="card">
-            <img src="img/juice menu 3.avif" alt="Juice Image 2">
-            <p>Strawberry SnowShake</p>
-        </div>
-        <div class="card">
-            <img src="img/juice mnu bg.avif" alt="Juice Image 3">
-            <p>Zesty Zing</p>
-        </div>
-        <div class="card">
-            <img src="img/juice menu 4.avif" alt="Juice Image 4">
-            <p>Kiwi Raspberry Twist</p>
+        <div class="line">
+            <div class="card">
+                <img src="img/juice menu 3.avif" alt="Juice Image 2">
+                <p>Strawberry SnowShake</p>
+            </div>
+            <div class="card">
+                <img src="img/juice mnu bg.avif" alt="Juice Image 3">
+                <p>Zesty Zing</p>
+            </div>
+            <div class="card">
+                <img src="img/juice menu 4.avif" alt="Juice Image 4">
+                <p>Kiwi Raspberry Twist</p>
+            </div>
         </div>
     </div>
     <div id="about">

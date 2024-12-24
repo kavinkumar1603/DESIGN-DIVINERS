@@ -9,7 +9,7 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 		<div class="signup">
-			<form onsubmit="handleSignUp(event)">
+				<form action="/signup" method="POST">
 				<label for="chk" aria-hidden="true">Sign up</label>
 				<input type="text" name="username" placeholder="User name" required="">
 				<input type="email" name="email" placeholder="Email" required="">
@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="login">
-			<form onsubmit="handleLogin(event)">
+				<form action="/login" method="POST">
 				<label for="chk" aria-hidden="true">Login</label>
 				<input type="email" name="email" placeholder="Email" required="">
 				<input type="password" name="password" placeholder="Password" required="">
@@ -28,34 +28,5 @@
 			</form>
 		</div>
 	</div>
-	<script>
-		function handleSignUp(event) {
-			event.preventDefault();
-			const formData = new FormData(event.target);
-			const data = {
-				username: formData.get('username'),
-				email: formData.get('email'),
-				password: formData.get('password'),
-				confirmPassword: formData.get('confirmPassword')
-			};
-			localStorage.setItem('signUpData', JSON.stringify(data));
-			redirectToHome();
-		}
-
-		function handleLogin(event) {
-			event.preventDefault();
-			const formData = new FormData(event.target);
-			const data = {
-				email: formData.get('email'),
-				password: formData.get('password')
-			};
-			localStorage.setItem('loginData', JSON.stringify(data));
-			redirectToHome();
-		}
-
-		function redirectToHome() {
-			window.location.href = '../index.html#home';
-		}
-	</script>
 </body>
 </html>

@@ -12,7 +12,7 @@
             top: 50%;
             left: 10px;
             transform: translateY(-50%);
-            z-index: 3; /* Ensure buttons are always on top */
+            z-index: 4; /* Ensure buttons are always on top */
         }
         .side-buttons button {
             cursor: pointer;
@@ -28,6 +28,7 @@
             background-color: black;
             padding: 20px;
             position: relative; 
+            z-index: 1; /* Ensure menu is behind the buttons */
         }
         .menu .card {
             transition: transform 0.3s;

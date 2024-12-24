@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stored Data</h1>
+    <h2>Sign Up Data</h2>
+    <table id="signUpTable">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Confirm Password</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Login Data</h2>
+    <table id="loginTable">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        function loadData() {
+            const signUpData = JSON.parse(localStorage.getItem('signUpData'));
+            const loginData = JSON.parse(localStorage.getItem('loginData'));
+
+            if (signUpData) {
+                const signUpTable = document.getElementById('signUpTable').getElementsByTagName('tbody')[0];
+                const row = signUpTable.insertRow();
+                row.insertCell(0).innerText = signUpData.username;
+                row.insertCell(1).innerText = signUpData.email;
+                row.insertCell(2).innerText = signUpData.password;
+                row.insertCell(3).innerText = signUpData.confirmPassword;
+            }
+
+            if (loginData) {
+                const loginTable = document.getElementById('loginTable').getElementsByTagName('tbody')[0];
+                const row = loginTable.insertRow();
+                row.insertCell(0).innerText = loginData.email;
+                row.insertCell(1).innerText = loginData.password;
+            }
+        }
+
+        window.onload = loadData;
+    </script>
+</body>
+</html>

@@ -18,7 +18,23 @@
 			border: 1px solid #ccc;
 			border-radius: 10px;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			text-align: center; /* Center align text */
+			text-align: center;
+			transition: transform 0.3s, opacity 0.3s; 
+		}
+		.signup {
+			transform: translateX(-100%); 
+			opacity: 0;
+		}
+		.login {
+			transform: translateX(100%); 
+			opacity: 0;
+		}
+		#chk:checked ~ .signup {
+			transform: translateX(0);
+		}
+		#chk:checked ~ .login {
+			transform: translateX(0); 
+			opacity: 1;
 		}
 		.signup button, .login button {
 			color: rgb(211, 187, 34);

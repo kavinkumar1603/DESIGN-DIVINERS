@@ -39,6 +39,7 @@
         .menu .card {
             transition: transform 0.3s;
             width: 200px;
+            height: 300px; /* Ensure all cards have the same height */
             margin: 10px;
             text-align: center;
             background-color: white;
@@ -48,7 +49,8 @@
         }
         .menu .card img {
             width: 100%;
-            height: auto;
+            height: 70%; /* Adjust image height to fit within the card */
+            object-fit: cover; /* Ensure images cover the area without distortion */
         }
         .menu .card:hover {
             transform: scale(1.05);
@@ -92,7 +94,8 @@
 </head>
 <body>
     <div class="side-buttons">
-        <button onclick="scrollToSection('home')" title="Home"><i class="fas fa-home"></i></button>
+        <button onclick="scrollToSection('home')" 
+        title="Home"><i class="fas fa-home"></i></button>
         <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
         <button onclick="scrollToSection('about')" title="About Us"><i class="fas fa-info-circle"></i></button>
         <button onclick="scrollToSection('contact')" title="Contact Us"><i class="fas fa-envelope"></i></button>

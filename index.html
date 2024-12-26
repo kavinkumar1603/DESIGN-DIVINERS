@@ -204,6 +204,16 @@
         .feedback-button:hover {
             background-color: #A89A6D;
         }
+        .contact-content {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            display: none; 
+        }
+        .contact-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -213,7 +223,7 @@
         <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
         <button onclick="toggleCartAndScroll()" title="Cart"><i class="fas fa-shopping-cart"></i></button>
         <button onclick="showAboutSection()" title="About Us"><i class="fas fa-info-circle"></i></button>
-        <button onclick="scrollToSection('contact')" title="Contact Us"><i class="fas fa-envelope"></i></button>
+        <button onclick="showContactSection()" title="Contact Us"><i class="fas fa-envelope"></i></button>
         
     </div>
     <div class="content" id="home">
@@ -353,7 +363,7 @@
         <p>Embark on a flavorful journey with us, and let Wanderlust Café be your destination for unforgettable desserts. 🌍🍰</p>
         <button class="feedback-button" onclick="window.location.href='https://forms.gle/ZvUpAegSjJmKq69R6'">Give Feedback</button>
     </div>
-    <div id="contact">
+    <div id="contact" class="contact-content">
         <h4>Contact: +91 3243412354 Email: thewanderlustcafe01@gmail.com</h4>
     </div>
     <script>
@@ -411,6 +421,12 @@
             const aboutSection = document.getElementById('about');
             aboutSection.style.display = 'block';
             scrollToSection('about');
+        }
+
+        function showContactSection() {
+            const contactSection = document.getElementById('contact');
+            contactSection.style.display = 'block';
+            scrollToSection('contact');
         }
 
         function printCart() {

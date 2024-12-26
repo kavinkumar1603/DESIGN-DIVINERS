@@ -229,7 +229,7 @@
     </div>
     <div class="cart" id="cart">
         <h3>Cart</h3>
-        <ul id="cart-items"></ul>
+        <div class="line" id="cart-items"></div>
     </div>
     <div id="about">
         <!-- About Us content here -->
@@ -244,11 +244,14 @@
 
         function addToCart(item, imageUrl) {
             const cartItems = document.getElementById('cart-items');
-            const listItem = document.createElement('li');
+            const listItem = document.createElement('div');
+            listItem.className = 'card';
             const itemImage = document.createElement('img');
             itemImage.src = imageUrl;
             listItem.appendChild(itemImage);
-            listItem.appendChild(document.createTextNode(item));
+            const itemName = document.createElement('p');
+            itemName.textContent = item;
+            listItem.appendChild(itemName);
             cartItems.appendChild(listItem);
             alert(item + " has been added to your cart!");
         }

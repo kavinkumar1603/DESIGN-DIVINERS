@@ -105,6 +105,14 @@
         }
         .cart ul li {
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .cart ul li img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -127,84 +135,81 @@
             <div class="card">
                 <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
                 <p>Ice Cake Fusion</p>
-                <button class="add-button" onclick="addToCart('Ice Cake Fusion')">ADD</button>
+                <button class="add-button" onclick="addToCart('Ice Cake Fusion', 'img/DESSER IMAGE 1.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/juice menu 3.avif" alt="Juice Image 2">
                 <p>Strawberry SnowShake</p>
-                <button class="add-button" onclick="addToCart('Strawberry SnowShake')">ADD</button>
+                <button class="add-button" onclick="addToCart('Strawberry SnowShake', 'img/juice menu 3.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/dessert images5.jpg" alt="Dessert Image 7">
                 <p>Glacier Slice</p>
-                <button class="add-button" onclick="addToCart('Glacier Slice')">ADD</button>
+                <button class="add-button" onclick="addToCart('Glacier Slice', 'img/dessert images5.jpg')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 4.avif" alt="Dessert Image 4">
                 <p>Melted Dreams</p>  
-                <button class="add-button" onclick="addToCart('Melted Dreams')">ADD</button>
+                <button class="add-button" onclick="addToCart('Melted Dreams', 'img/DESSERT IMAGE 4.avif')">ADD</button>
             </div>
-
             <div class="card">
                 <img src="img/carrd images.jpeg" alt="New Card Image 1">
                 <p>New Card 1</p>
-                <button class="add-button" onclick="addToCart('New Card 1')">ADD</button>
+                <button class="add-button" onclick="addToCart('New Card 1', 'img/carrd images.jpeg')">ADD</button>
             </div>
-           
         </div>
         <div class="line">
             <div class="card">
                 <img src="img/variety-mixed-types-chocolate_23-2148238709.avif" alt="Variety of Mixed Chocolates">
                 <p>Mixed Chocolates</p>
-                <button class="add-button" onclick="addToCart('Mixed Chocolates')">ADD</button>
+                <button class="add-button" onclick="addToCart('Mixed Chocolates', 'img/variety-mixed-types-chocolate_23-2148238709.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/dessert image 6.jpg" alt="Dessert Image 6">
                 <p>Ruby Ripple Brownie</p>
-                <button class="add-button" onclick="addToCart('Ruby Ripple Brownie')">ADD</button>
+                <button class="add-button" onclick="addToCart('Ruby Ripple Brownie', 'img/dessert image 6.jpg')">ADD</button>
             </div>
-            
             <div class="card">
                 <img src="img/juice img bg 2.png" alt="Juice Image 1">
                 <p>Scarlet Sip</p>
-                <button class="add-button" onclick="addToCart('Scarlet Sip')">ADD</button>
+                <button class="add-button" onclick="addToCart('Scarlet Sip', 'img/juice img bg 2.png')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 2.jpg" alt="Dessert Image 2">
                 <p>Chill & Crumble</p>
-                <button class="add-button" onclick="addToCart('Chill & Crumble')">ADD</button>
+                <button class="add-button" onclick="addToCart('Chill & Crumble', 'img/DESSERT IMAGE 2.jpg')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 5.jpg" alt="Dessert Image 5">
                 <p>Frozen Indulgence</p>
-                <button class="add-button" onclick="addToCart('Frozen Indulgence')">ADD</button>
+                <button class="add-button" onclick="addToCart('Frozen Indulgence', 'img/DESSERT IMAGE 5.jpg')">ADD</button>
             </div>
         </div>
         <div class="line">
             <div class="card">
                 <img src="img/juice mnu bg.avif" alt="Juice Image 3">
                 <p>Zesty Zing</p>
-                <button class="add-button" onclick="addToCart('Zesty Zing')">ADD</button>
+                <button class="add-button" onclick="addToCart('Zesty Zing', 'img/juice mnu bg.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/juice menu 4.avif" alt="Juice Image 4">
                 <p>Kiwi Raspberry Twist</p>
-                <button class="add-button" onclick="addToCart('Kiwi Raspberry Twist')">ADD</button>
+                <button class="add-button" onclick="addToCart('Kiwi Raspberry Twist', 'img/juice menu 4.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 3.avif" alt="Dessert Image 3">
                 <p>Rosy Strawberry Treat</p>
-                <button class="add-button" onclick="addToCart('Rosy Strawberry Treat')">ADD</button>
+                <button class="add-button" onclick="addToCart('Rosy Strawberry Treat', 'img/DESSERT IMAGE 3.avif')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/cards images.jpg" alt="New Card Image 2">
                 <p>New Card 2</p>
-                <button class="add-button" onclick="addToCart('New Card 2')">ADD</button>
+                <button class="add-button" onclick="addToCart('New Card 2', 'img/cards images.jpg')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/crds image.jpg" alt="New Card Image 1">
                 <p>New Card 1</p>
-                <button class="add-button" onclick="addToCart('New Card 1')">ADD</button>
+                <button class="add-button" onclick="addToCart('New Card 1', 'img/crds image.jpg')">ADD</button>
             </div>
         </div>
     </div>
@@ -223,10 +228,13 @@
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
-        function addToCart(item) {
+        function addToCart(item, imageUrl) {
             const cartItems = document.getElementById('cart-items');
             const listItem = document.createElement('li');
-            listItem.textContent = item;
+            const itemImage = document.createElement('img');
+            itemImage.src = imageUrl;
+            listItem.appendChild(itemImage);
+            listItem.appendChild(document.createTextNode(item));
             cartItems.appendChild(listItem);
             alert(item + " has been added to your cart!");
         }

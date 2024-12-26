@@ -39,7 +39,7 @@
         .menu .card {
             transition: transform 0.3s;
             width: 200px;
-            height: 300px;
+            height: 350px; /* Increased height to accommodate price */
             margin: 10px;
             text-align: center;
             background-color: white;
@@ -90,6 +90,11 @@
         .sign-in-button:hover {
             background-color: #070707;
         }
+        .price {
+            font-size: 1.2rem;
+            color: #d5a400;
+            margin-top: 5px;
+        }
         .cart {
             padding: 20px;
             border-radius: 10px;
@@ -109,7 +114,7 @@
         .cart .card {
             transition: transform 0.3s;
             width: 200px;
-            height: 300px;
+            height: 350px; /* Increased height to accommodate price */
             margin: 10px;
             text-align: center;
             border-radius: 10px;
@@ -146,81 +151,96 @@
             <div class="card">
                 <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
                 <p>Ice Cake Fusion</p>
-                <button class="add-button" onclick="addToCart('Ice Cake Fusion', 'img/DESSER IMAGE 1.avif')">ADD</button>
+                <p class="price">₹499</p>
+                <button class="add-button" onclick="addToCart('Ice Cake Fusion', 'img/DESSER IMAGE 1.avif', '₹499')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/juice menu 3.avif" alt="Juice Image 2">
                 <p>Strawberry SnowShake</p>
-                <button class="add-button" onclick="addToCart('Strawberry SnowShake', 'img/juice menu 3.avif')">ADD</button>
+                <p class="price">₹399</p>
+                <button class="add-button" onclick="addToCart('Strawberry SnowShake', 'img/juice menu 3.avif', '₹399')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/dessert images5.jpg" alt="Dessert Image 7">
                 <p>Glacier Slice</p>
-                <button class="add-button" onclick="addToCart('Glacier Slice', 'img/dessert images5.jpg')">ADD</button>
+                <p class="price">₹600</p>
+                <button class="add-button" onclick="addToCart('Glacier Slice', 'img/dessert images5.jpg', '₹600')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 4.avif" alt="Dessert Image 4">
                 <p>Melted Dreams</p>  
-                <button class="add-button" onclick="addToCart('Melted Dreams', 'img/DESSERT IMAGE 4.avif')">ADD</button>
+                <p class="price">₹550</p>
+                <button class="add-button" onclick="addToCart('Melted Dreams', 'img/DESSERT IMAGE 4.avif', '₹550')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/carrd images.jpeg" alt="New Card Image 1">
                 <p>New Card 1</p>
-                <button class="add-button" onclick="addToCart('New Card 1', 'img/carrd images.jpeg')">ADD</button>
+                <p class="price">₹475</p>
+                <button class="add-button" onclick="addToCart('New Card 1', 'img/carrd images.jpeg', '₹475')">ADD</button>
             </div>
         </div>
         <div class="line">
             <div class="card">
                 <img src="img/variety-mixed-types-chocolate_23-2148238709.avif" alt="Variety of Mixed Chocolates">
                 <p>Mixed Chocolates</p>
-                <button class="add-button" onclick="addToCart('Mixed Chocolates', 'img/variety-mixed-types-chocolate_23-2148238709.avif')">ADD</button>
+                <p class="price">₹525</p>
+                <button class="add-button" onclick="addToCart('Mixed Chocolates', 'img/variety-mixed-types-chocolate_23-2148238709.avif', '₹525')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/dessert image 6.jpg" alt="Dessert Image 6">
                 <p>Ruby Ripple Brownie</p>
-                <button class="add-button" onclick="addToCart('Ruby Ripple Brownie', 'img/dessert image 6.jpg')">ADD</button>
+                <p class="price">₹599</p>
+                <button class="add-button" onclick="addToCart('Ruby Ripple Brownie', 'img/dessert image 6.jpg', '₹599')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/juice img bg 2.png" alt="Juice Image 1">
                 <p>Scarlet Sip</p>
-                <button class="add-button" onclick="addToCart('Scarlet Sip', 'img/juice img bg 2.png')">ADD</button>
+                <p class="price">₹450</p>
+                <button class="add-button" onclick="addToCart('Scarlet Sip', 'img/juice img bg 2.png', '₹450')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 2.jpg" alt="Dessert Image 2">
                 <p>Chill & Crumble</p>
-                <button class="add-button" onclick="addToCart('Chill & Crumble', 'img/DESSERT IMAGE 2.jpg')">ADD</button>
+                <p class="price">₹575</p>
+                <button class="add-button" onclick="addToCart('Chill & Crumble', 'img/DESSERT IMAGE 2.jpg', '₹575')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 5.jpg" alt="Dessert Image 5">
                 <p>Frozen Indulgence</p>
-                <button class="add-button" onclick="addToCart('Frozen Indulgence', 'img/DESSERT IMAGE 5.jpg')">ADD</button>
+                <p class="price">₹600</p>
+                <button class="add-button" onclick="addToCart('Frozen Indulgence', 'img/DESSERT IMAGE 5.jpg', '₹600')">ADD</button>
             </div>
         </div>
         <div class="line">
             <div class="card">
                 <img src="img/juice mnu bg.avif" alt="Juice Image 3">
                 <p>Zesty Zing</p>
-                <button class="add-button" onclick="addToCart('Zesty Zing', 'img/juice mnu bg.avif')">ADD</button>
+                <p class="price">₹499</p>
+                <button class="add-button" onclick="addToCart('Zesty Zing', 'img/juice mnu bg.avif', '₹499')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/juice menu 4.avif" alt="Juice Image 4">
                 <p>Kiwi Raspberry Twist</p>
-                <button class="add-button" onclick="addToCart('Kiwi Raspberry Twist', 'img/juice menu 4.avif')">ADD</button>
+                <p class="price">₹525</p>
+                <button class="add-button" onclick="addToCart('Kiwi Raspberry Twist', 'img/juice menu 4.avif', '₹525')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/DESSERT IMAGE 3.avif" alt="Dessert Image 3">
                 <p>Rosy Strawberry Treat</p>
-                <button class="add-button" onclick="addToCart('Rosy Strawberry Treat', 'img/DESSERT IMAGE 3.avif')">ADD</button>
+                <p class="price">₹550</p>
+                <button class="add-button" onclick="addToCart('Rosy Strawberry Treat', 'img/DESSERT IMAGE 3.avif', '₹550')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/cards images.jpg" alt="New Card Image 2">
                 <p>New Card 2</p>
-                <button class="add-button" onclick="addToCart('New Card 2', 'img/cards images.jpg')">ADD</button>
+                <p class="price">₹475</p>
+                <button class="add-button" onclick="addToCart('New Card 2', 'img/cards images.jpg', '₹475')">ADD</button>
             </div>
             <div class="card">
                 <img src="img/crds image.jpg" alt="New Card Image 1">
                 <p>New Card 1</p>
-                <button class="add-button" onclick="addToCart('New Card 1', 'img/crds image.jpg')">ADD</button>
+                <p class="price">₹500</p>
+                <button class="add-button" onclick="addToCart('New Card 1', 'img/crds image.jpg', '₹500')">ADD</button>
             </div>
         </div>
     </div>
@@ -239,7 +259,7 @@
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
-        function addToCart(item, imageUrl) {
+        function addToCart(item, imageUrl, price) {
             const cartItems = document.getElementById('cart-items');
             const listItem = document.createElement('div');
             listItem.className = 'card';
@@ -249,6 +269,10 @@
             const itemName = document.createElement('p');
             itemName.textContent = item;
             listItem.appendChild(itemName);
+            const itemPrice = document.createElement('p');
+            itemPrice.className = 'price';
+            itemPrice.textContent = price;
+            listItem.appendChild(itemPrice);
             cartItems.appendChild(listItem);
             alert(item + " has been added to your cart!");
         }

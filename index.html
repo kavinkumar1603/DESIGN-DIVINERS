@@ -372,10 +372,10 @@
             printWindow.document.write('<p style="text-align: left;">Date: ' + new Date().toLocaleDateString() + '</p>');
             printWindow.document.write('<p style="text-align: left;">Tel: 123-456-7890</p>');
             printWindow.document.write('<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">');
-            printWindow.document.write('<thead><tr><th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Item</th></tr></thead><tbody>');
+            printWindow.document.write('<thead><tr><th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Item</th><th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Price</th></tr></thead><tbody>');
             const cartTable = document.getElementById('cart-table').getElementsByTagName('tbody')[0];
             for (let i = 0; i < cartTable.rows.length; i++) {
-                printWindow.document.write('<tr><td style="border: 1px solid #ddd; padding: 8px; text-align: center;">' + cartTable.rows[i].cells[0].textContent + '</td></tr>');
+                printWindow.document.write('<tr><td style="border: 1px solid #ddd; padding: 8px; text-align: center;">' + cartTable.rows[i].cells[0].textContent + '</td><td style="border: 1px solid #ddd; padding: 8px; text-align: center;">' + cartTable.rows[i].cells[1].textContent + '</td></tr>');
             }
             printWindow.document.write('</tbody></table>');
             printWindow.document.write('<p style="text-align: right; font-size: 1.5rem; font-weight: bold;">Total: ₹' + totalAmount + '</p>');

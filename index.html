@@ -154,6 +154,23 @@
             text-align: right;
             margin-top: 20px;
         }
+        .print-button {
+            background-color: #c5b78a;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin-top: 10px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .print-button:hover {
+            background-color: #98e928;
+        }
     </style>
 </head>
 <body>
@@ -175,7 +192,7 @@
         <div class="line">
             <div class="card">
                 <img src="img/DESSER IMAGE 1.avif" alt="Dessert Image 1">
-                <p>Ice Cake Fusion</p>
+                <p>Ice Cake Fusion</p>                
                 <br>
                 <p class="price">₹499</p>
                 <br>
@@ -183,7 +200,7 @@
             </div>
             <div class="card">
                 <img src="img/juice menu 3.avif" alt="Juice Image 2">
-                <p>Strawberry SnowShake</p>
+                <p>Strawberry SnowShake</p>             
                 <p class="price">₹399</p>
                 <br>
                 <button class="add-button" onclick="addToCart('Strawberry SnowShake', 'img/juice menu 3.avif', 399)">ADD</button>
@@ -204,11 +221,11 @@
             </div>
             <div class="card">
                 <img src="img/carrd images.jpeg" alt="New Card Image 1">
-                <p>New Card 1</p>
+                <p>New Card 1</p>              
                 <p class="price">₹475</p>
                 <br>
                 <button class="add-button" onclick="addToCart('New Card 1', 'img/carrd images.jpeg', 475)">ADD</button>
-            </div>
+            </div>          
         </div>
         <div class="line">
             <div class="card">
@@ -224,10 +241,10 @@
                 <p class="price">₹599</p>
                 <br>
                 <button class="add-button" onclick="addToCart('Ruby Ripple Brownie', 'img/dessert image 6.jpg', 599)">ADD</button>
-            </div>
+            </div>           
             <div class="card">
                 <img src="img/juice img bg 2.png" alt="Juice Image 1">
-                <p>Scarlet Sip</p>
+                <p>Scarlet Sip</p>              
                 <p class="price">₹450</p>
                 <br>
                 <button class="add-button" onclick="addToCart('Scarlet Sip', 'img/juice img bg 2.png', 450)">ADD</button>
@@ -293,6 +310,7 @@
             </tbody>
         </table>
         <div class="total-amount" id="total-amount">Total: ₹0</div>
+        <button class="print-button" onclick="window.print()">Print</button>
     </div>
     <div id="about">
         <!-- About Us content here -->

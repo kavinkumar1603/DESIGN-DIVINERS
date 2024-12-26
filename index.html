@@ -91,7 +91,6 @@
             background-color: #070707;
         }
         .cart {
-            /*background-color: white;*/
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -131,9 +130,10 @@
     <div class="side-buttons">
         <button onclick="scrollToSection('home')" title="Home"><i class="fas fa-home"></i></button>
         <button onclick="scrollToSection('menu')" title="Menu"><i class="fas fa-utensils"></i></button>
+        <button onclick="toggleCartAndScroll()" title="Cart"><i class="fas fa-shopping-cart"></i></button>
         <button onclick="scrollToSection('about')" title="About Us"><i class="fas fa-info-circle"></i></button>
         <button onclick="scrollToSection('contact')" title="Contact Us"><i class="fas fa-envelope"></i></button>
-        <button onclick="toggleCart()" title="Cart"><i class="fas fa-shopping-cart"></i></button>
+        
     </div>
     <div class="content" id="home">
         <h1>Welcome to Foodie's Paradise</h1>
@@ -253,10 +253,11 @@
             alert(item + " has been added to your cart!");
         }
 
-        function toggleCart() {
+        function toggleCartAndScroll() {
             const cart = document.getElementById('cart');
             if (cart.style.display === 'none' || cart.style.display === '') {
                 cart.style.display = 'flex';
+                scrollToSection('cart');
             } else {
                 cart.style.display = 'none';
             }

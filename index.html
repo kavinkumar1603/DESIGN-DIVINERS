@@ -187,6 +187,23 @@
             font-size: 1.2rem;
             line-height: 1.6;
         }
+        .feedback-button {
+            background-color: #c2b280;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .feedback-button:hover {
+            background-color: #A89A6D;
+        }
     </style>
 </head>
 <body>
@@ -334,6 +351,7 @@
         <p>Our café is a celebration of creativity, passion, and quality. From handcrafted cakes that are as beautiful as they are delicious to ice cream dishes bursting with imaginative flavors, everything we offer is designed to delight and surprise.</p>
         <p>Whether you’re here for a quiet escape, a joyful celebration, or just a sweet indulgence, Wanderlust Café offers a cozy, welcoming ambiance where you can unwind and savor every moment.</p>
         <p>Embark on a flavorful journey with us, and let Wanderlust Café be your destination for unforgettable desserts. 🌍🍰</p>
+        <button class="feedback-button" onclick="window.location.href='feedback.html'">Give Feedback</button>
     </div>
     <div id="contact">
         <!-- Contact Us content here -->
@@ -415,7 +433,7 @@
             printWindow.print();
         }
         document.addEventListener('DOMContentLoaded', function() {
-            const isSignedIn = false; // Replace with actual sign-in check
+            const isSignedIn = false; 
             if (isSignedIn) {
                 const signInButton = document.getElementById('sign-in-button');
                 if (signInButton) {

@@ -102,31 +102,30 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        .cart ul {
-            list-style-type: none;
-            padding: 0;
+        .cart .line {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
-        .cart ul li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
+        .cart .card {
+            transition: transform 0.3s;
             width: 200px;
             height: 300px;
             margin: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
             position: relative;
         }
-        .cart ul li img {
+        .cart .card img {
             width: 100%;
-            height: 70%;
-            object-fit: cover;
+            height: 70%; 
+            object-fit: cover; 
+        }
+        .cart .card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>

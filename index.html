@@ -353,7 +353,7 @@
             </tbody>
         </table>
         <div class="total-amount" id="total-amount">Total: ₹0</div>
-        <button class="order-button" onclick="placeOrder()">Place Order</button>
+        <button class="order-button" onclick="redirectToOrderPage()">Place Order</button>
     </div>
     <div id="about" class="about-content">
         <h2>ABOUT US</h2>
@@ -459,16 +459,8 @@
             }
         });
 
-        function placeOrder() {
-            const name = prompt("Please enter your name:");
-            const address = prompt("Please enter your address:");
-            const mobile = prompt("Please enter your mobile number:");
-            
-            if (name && address && mobile) {
-                alert("Order placed successfully!\n\nName: " + name + "\nAddress: " + address + "\nMobile: " + mobile);
-            } else {
-                alert("Order not placed. Please provide all the details.");
-            }
+        function redirectToOrderPage() {
+            window.location.href = 'order.html';
         }
     </script>
 </body>

@@ -38,6 +38,19 @@
         .payment-methods button:hover {
             background-color: #98e928;
         }
+        .payment-button {
+            background-color: #c5b78a;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .payment-button:hover {
+            background-color: #98e928;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +64,7 @@
             <button onclick="selectPaymentMethod('PayPal')">PayPal</button>
             <button onclick="selectPaymentMethod('Net Banking')">Net Banking</button>
         </div>
+        <button class="payment-button" onclick="makePayment()">Make Payment</button>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -66,6 +80,10 @@
 
         function selectPaymentMethod(method) {
             alert(`Payment method selected: ${method}`);
+        }
+
+        function makePayment() {
+            alert('Payment process initiated.');
         }
     </script>
 </body>

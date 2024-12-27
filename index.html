@@ -214,6 +214,19 @@
             font-size: 1.2rem;
             line-height: 1.6;
         }
+        .remove-button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .remove-button:hover {
+            background-color: #ff1a1a;
+        }
     </style>
 </head>
 <body>
@@ -345,6 +358,7 @@
                 <tr>
                     <th>Item</th>
                     <th>Price</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -387,19 +401,38 @@
             itemPrice.className = 'price';
             itemPrice.textContent = `₹${price}`;
             listItem.appendChild(itemPrice);
+            const removeButton = document.createElement('button');
+            removeButton.className = 'remove-button';
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = () => removeFromCart(item, price, listItem, row);
+            listItem.appendChild(removeButton);
             cartItems.appendChild(listItem);
 
             const cartTable = document.getElementById('cart-table').getElementsByTagName('tbody')[0];
             const row = cartTable.insertRow();
             const cell1 = row.insertCell(0);
             const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
             cell1.textContent = item;
             cell2.textContent = `₹${price}`;
+            const removeButtonCell = document.createElement('button');
+            removeButtonCell.className = 'remove-button';
+            removeButtonCell.textContent = 'Remove';
+            removeButtonCell.onclick = () => removeFromCart(item, price, listItem, row);
+            cell3.appendChild(removeButtonCell);
 
             totalAmount += price;
             document.getElementById('total-amount').textContent = `Total: ₹${totalAmount}`;
 
             alert(item + " has been added to your cart!");
+        }
+
+        function removeFromCart(item, price, listItem, row) {
+            listItem.remove();
+            row.remove();
+            totalAmount -= price;
+            document.getElementById('total-amount').textContent = `Total: ₹${totalAmount}`;
+            alert(item + " has been removed from your cart!");
         }
 
         function toggleCartAndScroll() {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .payment-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .payment-form h2 {
+            margin-bottom: 20px;
+        }
+        .payment-form p {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-methods button {
+            background-color: #c5b78a;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .payment-methods button:hover {
+            background-color: #98e928;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-form">
+        <h2>Payment Details</h2>
+        <div id="user-details"></div>
+        <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <button onclick="selectPaymentMethod('Credit Card')">Credit Card</button>
+            <button onclick="selectPaymentMethod('Debit Card')">Debit Card</button>
+            <button onclick="selectPaymentMethod('PayPal')">PayPal</button>
+            <button onclick="selectPaymentMethod('Net Banking')">Net Banking</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
+            if (orderDetails) {
+                document.getElementById('user-details').innerHTML = `
+                    <p><strong>Name:</strong> ${orderDetails.name}</p>
+                    <p><strong>Address:</strong> ${orderDetails.address}</p>
+                    <p><strong>Phone:</strong> ${orderDetails.phone}</p>
+                `;
+            }
+        });
+
+        function selectPaymentMethod(method) {
+            alert(`Payment method selected: ${method}`);
+        }
+    </script>
+</body>
+</html>

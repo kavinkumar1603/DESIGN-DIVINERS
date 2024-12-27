@@ -64,7 +64,8 @@
             const address = document.getElementById('address').value;
             const phone = document.getElementById('phone').value;
 
-            alert(`Order placed successfully!\n\nName: ${name}\nAddress: ${address}\nPhone: ${phone}`);
+            localStorage.setItem('orderDetails', JSON.stringify({ name, address, phone }));
+            window.location.href = '../payment/index.html';
         }
     </script>
 </body>

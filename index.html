@@ -458,6 +458,18 @@
                 }
             }
         });
+
+        function placeOrder() {
+            const name = prompt("Please enter your name:");
+            const address = prompt("Please enter your address:");
+            const mobile = prompt("Please enter your mobile number:");
+            
+            if (name && address && mobile) {
+                alert("Order placed successfully!\n\nName: " + name + "\nAddress: " + address + "\nMobile: " + mobile);
+            } else {
+                alert("Order not placed. Please provide all the details.");
+            }
+        }
     </script>
 </body>
 </html>
